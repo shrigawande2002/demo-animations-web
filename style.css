@@ -54,7 +54,7 @@ nav{
 /* page2  */
 
 .container-1{
-    padding: 1rem 5rem;    /* follow this padding  */
+    padding: 2.5rem 5rem;    /* follow this padding  */
     display: flex;
     flex-direction: row;
 }
@@ -64,7 +64,13 @@ nav{
 .part1 h1{
     font-size: 4.5rem;
     font-weight: 500;
+    font-family: japan;
 }
+
+.contet-div{
+    width: 95%;
+}
+
 .contet-div p{
     font-size: 20px;
     padding: 1rem 0rem  
@@ -75,31 +81,274 @@ nav{
     width: 50%;
     background-color: black;
     color: white;
-    border-radius: 15px;
+    border-radius: 10px;
     outline: none;
     list-style: none;
+    
 
+}
+
+.part2{
+    width: 50%;
 }
 
 .part2 img{
+    width: 90%;
+    height: 90%;
+    object-fit: contain;
+
+}
+
+
+.logos{
     width: 100%;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    padding: 3rem 5rem;
+}
 
+.logos img{
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+}
+
+.services{
+    width: 100%;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+     padding: 1rem 5rem;
 }
 
 
-@media screen and (max-width: 600px) {
-
-    nav{
-        display: none
-    };
-    .container-1{
-    padding: 1rem 2rem;    /* follow this padding  */
-     display: flex;
-    flex-direction: column;
-}
+.service-btn p{
+    font-size: 30px;
+    font-weight: 600;
+    background-color: #BAFF59;
+    padding: 0.2rem 0.3rem;
+    border-radius: 8px;  
+    font-family: japan;
 }
 
-@media screen and (max-width: 768px) {
+.service-content{
+    width: 50%;
+}
+.service-content p{
+    font-size: 18px;
+    padding: 1rem 0rem;
+}
+
+
+.card-container{
+    display: flex;
+    height: 80%;
+    width: 100%;
+     padding: 3rem 5rem; 
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 4rem;
+}
+
+.elems {
+    flex-shrink: 0;
+    height: 334px;
+    width: 47%;
+    border: 2px solid black; 
+    border-radius: 66px;
+    box-shadow: 0px 13px 0px black;
+    display: flex;
+    padding:0rem 1rem;
+}
+.bg-black{
+    background-color: black;
+}
+.bg-black .elems-content h2 span{
+    background-color: white;
     
+}
+.bg-black p{
+    color: white;
+}
+
+.elems-content{
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between ;
+}
+
+.elems-content p{
+    color: black;
+    font-size: 20px;
+    font-family: japan;
+}
+.elems-content p span{
+    background-color: black;
+    padding: 0.5rem;
+    border-radius: 50%;
+}
+.elems-content span i{
+   color: white;
+   font-size: 20px;
+}
+.bg-black .elems-content p{
+    color:white;
+}
+
+.elems-content h2 span{
+    background-color: #BAFF59;
+    padding: 0rem 1rem 0rem 0rem;
+    
+}
+.elems-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 20%;
+  
+}
+
+.page6{
+    padding: 1rem 5rem ;
+    
+}
+.main-div{
+    background-color: #F3F3F3;
+    border-radius: 18px;
+ display: flex;
+ padding: 0rem 3rem 0rem 3rem; 
+  
+    
+}
+
+
+.main-div-content h1{
+    font-weight: 600;
+    padding: 4rem 0rem 0rem 0rem;
+}
+.main-div-content p{
+ width: 70%;
+ font-size: 20px;
+ padding: 1rem 0rem;
+}
+.main-div-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.page7{
+    margin-top: 5rem;
+}
+
+.page8{
+    margin: 1rem 5rem 2rem 5rem ;
+}
+.page-card-container{
+    background-color: #111;
+    border-radius: 20px;
+    padding: 1rem 2rem; 
+    display: flex;
+}
+
+.card-content{
+    color: white;
+    padding: 1rem 1.5rem ;
+}
+
+
+.learn-more{
+    color: #BAFF59;
+    font-size: 20px;
+}
+
+.learn-more span i{
+    font-size: 25px;
+    
+}
+.line{
+    background-color: #BAFF59;
+    width: 3px;
+    height: 8rem;
+    margin-top: 1rem;
+}
+@media screen and (max-width: 600px) {
+    nav {
+        display: none;
+    }
+
+
+    .container-1 {
+        padding: 1rem 1rem; /* Adjusted padding */
+        display: flex;
+        flex-direction: column !important;
+    }
+
+    .part1 {
+        width: 100%;
+    }
+
+    .part2 {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .btn-div button{
+    padding: 10px;
+    width: 90%;
+   
+}
+
+.logos{
+    width: 100%;
+    display: flex;
+    gap: 0rem;
+    justify-content: center;
+   flex-direction: column;
+   align-items: center;
+} 
+
+.logos img{
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+}
+
+.services{
+    padding: 1rem 1rem;
+}
+
+.service-content{
+    width: 100%;
+}
+
+.card-container {
+    padding: 0rem;
+}
+
+.elems{
+    width: 80%;
+}
+.page6{
+    padding: 5rem 1rem;
+}
+.main-div{
+ flex-direction: column;
+ gap: 3rem;
+} 
+
+.page-card-container{
+    flex-direction: column;
+    
+}
+.line{
+   display: none;
+}
+.card-content {
+    color: white;
+    padding: 1rem 0.1rem;
+}
 }
 
