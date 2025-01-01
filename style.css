@@ -1,0 +1,105 @@
+@font-face {
+    font-family: japan;
+    src: url(./3856NeueMachina.woff2);
+}
+
+*{
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 80px;
+}
+ .logo{
+    display: flex;
+    gap: 8px;
+ }
+.logo h2{
+ font-size: 40px;
+}
+.logo i{
+    font-size: 40px;
+    display: inline-block;
+    rotate: 54deg;
+}
+.nav-elements{
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+}
+.nav-elements h4{
+    font-size: 18px;
+    font-weight: 500;
+    font-family:Arial, Helvetica, sans-serif ;
+
+}
+
+.nav-elements button{
+    padding: 15px 20px;
+    border: 2px solid black;
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    border-radius: 10px;
+}
+
+/* page2  */
+
+.container-1{
+    padding: 1rem 5rem;    /* follow this padding  */
+    display: flex;
+    flex-direction: row;
+}
+.part1{
+    width: 50%;
+}
+.part1 h1{
+    font-size: 4.5rem;
+    font-weight: 500;
+}
+.contet-div p{
+    font-size: 20px;
+    padding: 1rem 0rem  
+}
+
+.btn-div button{
+    padding: 15px;
+    width: 50%;
+    background-color: black;
+    color: white;
+    border-radius: 15px;
+    outline: none;
+    list-style: none;
+
+}
+
+.part2 img{
+    width: 100%;
+
+}
+
+
+@media screen and (max-width: 600px) {
+
+    nav{
+        display: none
+    };
+    .container-1{
+    padding: 1rem 2rem;    /* follow this padding  */
+     display: flex;
+    flex-direction: column;
+}
+}
+
+@media screen and (max-width: 768px) {
+    
+}
+
