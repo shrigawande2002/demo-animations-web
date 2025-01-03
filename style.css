@@ -11,6 +11,21 @@
     
 }
 
+body{
+    overflow-x: hidden;
+    cursor: pointer;
+}
+
+
+
+
+.cursor{
+ height: 12px;
+ width: 12px;
+ background-color: black;
+ border-radius: 50%;
+position: fixed;
+}
 nav{
     display: flex;
     justify-content: space-between;
@@ -219,6 +234,7 @@ nav{
     border-radius: 18px;
  display: flex;
  padding: 0rem 3rem 0rem 3rem; 
+ height: 40vh;
   
     
 }
@@ -274,6 +290,28 @@ nav{
     height: 8rem;
     margin-top: 1rem;
 }
+
+
+
+.floating-image {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s, transform 0.3s;
+  height: 12px !important;
+  width: 12px !important;
+  
+}
+
+.card-content {
+  position: relative;
+  cursor: pointer;
+}
+
+
 @media screen and (max-width: 600px) {
     nav {
         display: none;
