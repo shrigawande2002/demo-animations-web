@@ -60,17 +60,15 @@ tl.from(" .logos img", {
   },
 });
 
-tl.from(".services .service-btn p", {
-  x: 20,
+tl.from(".page4 ", {
+  y: 30,
   opacity: 0,
   duration: 1,
-  stagger: 0.3,
 
   scrollTrigger: {
     trigger: ".services",
     start: "top 70%",
     end: "top 30%",
-    scrub: 1,
   },
 });
 
@@ -83,7 +81,6 @@ tl.from(".animte-1", {
     start: "top 80%",
     end: "top 0%",
     scrub: 2,
-    // markers: true,
   },
 });
 tl.from(
@@ -129,29 +126,18 @@ tl.from(".page7", {
   scrollTrigger: {
     trigger: ".page7",
     start: "top 80%",
-    end: "top 30%",
+    end: "top 50%",
     scrub: 1,
   },
 });
 
-document.querySelectorAll(".card-content").forEach((card) => {
-  const floatingImage = card.querySelector(".floating-image");
-
-  card.addEventListener("mouseover", () => {
-    gsap.to(floatingImage, {
-      opacity: 1,
-      y: -20,
-      duration: 0.5,
-      ease: "power3.out",
-    });
-  });
-
-  card.addEventListener("mouseout", () => {
-    gsap.to(floatingImage, {
-      opacity: 0,
-      y: 0,
-      duration: 0.5,
-      ease: "power3.out",
-    });
-  });
+tl.from(".card-content ", {
+  opacity: 0,
+  duration: 1,
+  scrollTrigger: {
+    trigger: ".card-content ",
+    start: "top 80%",
+    end: "top 90%",
+    scrub: 1,
+  },
 });
